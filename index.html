@@ -1,0 +1,3207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="thermal">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prachi Parmita | B.Tech CSE & Builder | Heatmap Portfolio</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Prachi Parmita, 2nd-year B.Tech CSE student at IILM University, Gurugram. Hackathon leader, public speaker, and builder exploring Python, Git & AWS." />
+  <meta name="keywords" content="Prachi Parmita, Portfolio, B.Tech CSE, IILM University, Smart India Hackathon, IVAS, Python, AWS, Gurugram, New Delhi" />
+  <meta name="author" content="Prachi Parmita" />
+  
+  <meta property="og:title" content="Prachi Parmita | B.Tech CSE & Builder | Heatmap Portfolio" />
+  <meta property="og:description" content="Personal portfolio of Prachi Parmita. Hackathon leader, builder, and CSE student turning ideas into working systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/prachiparmitaug25-hub" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Prachi Parmita | Heatmap Portfolio" />
+  <meta name="twitter:description" content="someone who loves building things that work (and look cool). Hackathon team leader & tech enthusiast." />
+  <meta name="theme-color" content="#070a14" />
+
+  <!-- Emoji Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+
+  <!-- Google Fonts: Space Grotesk + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://formsubmit.co">
+  <link rel="preconnect" href="https://formsubmit.co" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!--
+  =============================================================================
+  QUICK CONFIGURATION GUIDE FOR PRACHI PARMITA:
+  =============================================================================
+  1. LINKEDIN URL: Configured to https://www.linkedin.com/public-profile/settings
+  2. EMAIL FORM: Connected directly to prachiparmita05@gmail.com via FormSubmit with instant delivery.
+  3. RESUME FILE: Place "Prachi_Parmita_Resume.pdf" in the same directory as this index.html.
+  =============================================================================
+  -->
+
+  <style>
+    /* ==========================================================================
+       CSS VARIABLES & TOPOGRAPHIC HEATMAP PALETTES
+       ========================================================================== */
+    :root {
+      --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* THEME 1: Thermal (Authentic Thermal Camera Heatmap: Deep Navy -> Purple -> Magenta -> Orange -> Yellow -> White-Hot) */
+    [data-theme="thermal"] {
+      --bg-base: #0d0a24;
+      --bg-surface: #17113b;
+      --bg-card: rgba(26, 18, 58, 0.76);
+      --bg-card-hover: rgba(38, 26, 82, 0.88);
+      
+      --border-subtle: rgba(234, 88, 12, 0.3);
+      --border-bright: #ea580c;
+      --contour-line: rgba(251, 191, 36, 0.3);
+      --contour-glow: rgba(234, 88, 12, 0.55);
+
+      --text-main: #ffffff;
+      --text-muted: #e2d9f3;
+      --text-faint: #a89bc2;
+
+      /* Authentic Heatmap Spectrum: Deep Navy -> Purple -> Magenta -> Crimson -> Orange -> Yellow -> White Hot */
+      --heat-0: #0a081d;
+      --heat-1: #2a0b4d;
+      --heat-2: #4c117e;
+      --heat-3: #86198f;
+      --heat-4: #c026d3;
+      --heat-5: #ea580c;
+      --heat-6: #facc15;
+      --heat-7: #ffffff;
+
+      --primary-accent: #ea580c;
+      --glow-color: rgba(234, 88, 12, 0.55);
+      --card-gradient: linear-gradient(145deg, rgba(28, 18, 62, 0.85), rgba(16, 11, 38, 0.82));
+      --contour-pattern-opacity: 0.28;
+    }
+
+    /* THEME 2: Infrared (Deep Crimson, Vermilion & Solar Blaze) */
+    [data-theme="infrared"] {
+      --bg-base: #14050e;
+      --bg-surface: #220817;
+      --bg-card: rgba(36, 12, 23, 0.76);
+      --bg-card-hover: rgba(54, 18, 36, 0.88);
+      
+      --border-subtle: rgba(244, 63, 94, 0.28);
+      --border-bright: #fb7185;
+      --contour-line: rgba(254, 205, 211, 0.25);
+      --contour-glow: rgba(244, 63, 94, 0.45);
+
+      --text-main: #fff1f2;
+      --text-muted: #fda4af;
+      --text-faint: #9f1239;
+
+      --heat-0: #1a0810;
+      --heat-1: #4c0519;
+      --heat-2: #881337;
+      --heat-3: #be123c;
+      --heat-4: #e11d48;
+      --heat-5: #f43f5e;
+      --heat-6: #fda4af;
+      --heat-7: #ffffff;
+
+      --primary-accent: #f43f5e;
+      --glow-color: rgba(244, 63, 94, 0.55);
+      --card-gradient: linear-gradient(145deg, rgba(42, 14, 28, 0.82), rgba(24, 7, 16, 0.78));
+      --contour-pattern-opacity: 0.28;
+    }
+
+    /* THEME 3: Ice (Cryogenic Glacial Heatmap) */
+    [data-theme="ice"] {
+      --bg-base: #051020;
+      --bg-surface: #0a1f3c;
+      --bg-card: rgba(13, 34, 60, 0.76);
+      --bg-card-hover: rgba(20, 50, 88, 0.88);
+      
+      --border-subtle: rgba(56, 189, 248, 0.28);
+      --border-bright: #38bdf8;
+      --contour-line: rgba(186, 230, 253, 0.26);
+      --contour-glow: rgba(56, 189, 248, 0.45);
+
+      --text-main: #f0f9ff;
+      --text-muted: #93c5fd;
+      --text-faint: #38bdf8;
+
+      --heat-0: #081a2f;
+      --heat-1: #0c4a6e;
+      --heat-2: #0284c7;
+      --heat-3: #0ea5e9;
+      --heat-4: #38bdf8;
+      --heat-5: #7dd3fc;
+      --heat-6: #bae6fd;
+      --heat-7: #ffffff;
+
+      --primary-accent: #38bdf8;
+      --glow-color: rgba(56, 189, 248, 0.55);
+      --card-gradient: linear-gradient(145deg, rgba(16, 42, 74, 0.82), rgba(8, 22, 42, 0.78));
+      --contour-pattern-opacity: 0.28;
+    }
+
+    /* THEME 4 (Easter Egg): White-Hot Overdrive */
+    [data-theme="whitehot"] {
+      --bg-base: #241604;
+      --bg-surface: #382408;
+      --bg-card: rgba(66, 48, 11, 0.78);
+      --bg-card-hover: rgba(94, 68, 16, 0.88);
+      
+      --border-subtle: rgba(254, 240, 138, 0.45);
+      --border-bright: #ffffff;
+      --contour-line: rgba(255, 255, 255, 0.5);
+      --contour-glow: rgba(255, 255, 255, 0.85);
+
+      --text-main: #ffffff;
+      --text-muted: #fef08a;
+      --text-faint: #facc15;
+
+      --heat-0: #2b1f07;
+      --heat-1: #c2410c;
+      --heat-2: #ea580c;
+      --heat-3: #f59e0b;
+      --heat-4: #facc15;
+      --heat-5: #fef08a;
+      --heat-6: #ffffff;
+      --heat-7: #ffffff;
+
+      --primary-accent: #ffffff;
+      --glow-color: rgba(255, 255, 255, 0.85);
+      --card-gradient: linear-gradient(145deg, rgba(78, 56, 14, 0.85), rgba(48, 34, 8, 0.8));
+      --contour-pattern-opacity: 0.38;
+    }
+
+    body.whitehot-surge {
+      animation: whitehot-flash 0.5s ease-out;
+      filter: brightness(1.2) contrast(1.15);
+    }
+
+    @keyframes whitehot-flash {
+      0% { filter: brightness(2.6) contrast(1.5); }
+      100% { filter: brightness(1.2) contrast(1.15); }
+    }
+
+    body.cursor-trail-disabled .custom-cursor,
+    body.cursor-trail-disabled .custom-cursor-follower {
+      display: none !important;
+    }
+
+    /* ==========================================================================
+       RESET & BASE STYLES
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      color-scheme: dark;
+    }
+
+    body {
+      background: radial-gradient(ellipse at 50% 25%, #180f3d 0%, #100b2a 50%, #09071a 100%);
+      color: var(--text-main);
+      font-family: var(--font-display);
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+      transition: background var(--transition-normal), color var(--transition-normal);
+      cursor: default;
+    }
+
+    [data-theme="infrared"] body {
+      background: radial-gradient(ellipse at 50% 25%, #2a0b1c 0%, #170712 50%, #0b0207 100%);
+    }
+
+    [data-theme="ice"] body {
+      background: radial-gradient(ellipse at 50% 25%, #0d284a 0%, #08172c 50%, #040c18 100%);
+    }
+
+    [data-theme="whitehot"] body {
+      background: radial-gradient(ellipse at 50% 25%, #442a06 0%, #2b1a04 50%, #150d02 100%);
+    }
+
+    ::selection {
+      background-color: var(--heat-5);
+      color: #000000;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* ==========================================================================
+       TOPOGRAPHIC CONTOUR & LIVING HEATMAP CANVAS
+       ========================================================================== */
+    #topographic-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.98;
+    }
+
+    /* Subtle Thermal Ambiance Overlay */
+    .topographic-contour-texture {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      background-image: radial-gradient(circle at 45% 25%, rgba(234, 88, 12, 0.12) 0%, transparent 60%),
+                        radial-gradient(circle at 75% 65%, rgba(192, 38, 211, 0.12) 0%, transparent 55%),
+                        radial-gradient(circle at 15% 75%, rgba(76, 17, 126, 0.18) 0%, transparent 60%);
+      opacity: 0.95;
+    }
+
+    /* Clean native arrow pointer for all interactions */
+    .custom-cursor,
+    .custom-cursor-follower {
+      display: none !important;
+    }
+
+    /* ==========================================================================
+       OVERHEAT EASTER EGG BANNER
+       ========================================================================== */
+    #overheat-banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #ea580c, #facc15, #ffffff, #ea580c);
+      background-size: 200% auto;
+      animation: overheat-shimmer 1.5s linear infinite;
+      color: #000000;
+      font-family: var(--font-mono);
+      font-weight: 800;
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 8px 16px;
+      z-index: 10000;
+      box-shadow: 0 4px 20px rgba(250, 204, 21, 0.8);
+      display: none;
+      letter-spacing: 0.05em;
+    }
+
+    @keyframes overheat-shimmer {
+      to { background-position: 200% center; }
+    }
+
+    /* ==========================================================================
+       PRELOADER WARM-UP
+       ========================================================================== */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--bg-base);
+      z-index: 99999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    .preloader-box {
+      width: min(90%, 360px);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 30px var(--glow-color);
+      font-family: var(--font-mono);
+      text-align: center;
+    }
+
+    .preloader-temp {
+      font-size: 2.75rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin: 8px 0;
+    }
+
+    .preloader-temp span {
+      color: var(--heat-5);
+      text-shadow: 0 0 16px var(--heat-4);
+    }
+
+    .preloader-bar-bg {
+      width: 100%;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 14px 0 8px 0;
+    }
+
+    .preloader-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--heat-2), var(--heat-4), var(--heat-5), var(--heat-7));
+      box-shadow: 0 0 10px var(--heat-5);
+    }
+
+    /* ==========================================================================
+       NAVIGATION BAR (Narrow, compact pill - centered at top, no Prachi Parmita)
+       ========================================================================== */
+    .navbar {
+      position: fixed;
+      top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+      max-width: 95vw;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 14px;
+      background: rgba(13, 10, 36, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 9999px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55), 0 0 16px rgba(255, 69, 0, 0.2);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 6px;
+      margin: 0;
+      padding: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-link {
+      padding: 7px 16px;
+      border-radius: 9999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #e5e7eb;
+      white-space: nowrap;
+      transition: all var(--transition-fast);
+      letter-spacing: -0.01em;
+    }
+
+    .nav-link:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .nav-link.active {
+      color: #ffffff;
+      background: linear-gradient(135deg, rgba(255, 69, 0, 0.45), rgba(250, 204, 21, 0.35));
+      border: 1px solid rgba(250, 204, 21, 0.5);
+      box-shadow: 0 0 12px rgba(250, 204, 21, 0.35);
+    }
+
+    /* ==========================================================================
+       CONTAINER & BALANCED SECTION FLOW
+       ========================================================================== */
+    .container {
+      width: min(92%, 1160px);
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Balanced section flow per user request: some gap, but not huge gap */
+    section {
+      padding: 56px 0;
+      position: relative;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 22px;
+      color: #ffffff;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Topographic contour border styling for cards */
+    .contour-card {
+      background: var(--card-gradient);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .contour-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--heat-2), var(--heat-4), var(--heat-5), var(--heat-6));
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: all var(--transition-fast);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--heat-5), var(--heat-4));
+      color: #000000;
+      box-shadow: 0 4px 20px var(--glow-color);
+      border: 1px solid var(--heat-6);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px var(--glow-color);
+      background: linear-gradient(135deg, var(--heat-6), var(--heat-5));
+    }
+
+    .btn-secondary {
+      background: var(--bg-card);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-bright);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       1. HERO SECTION (High-Contrast, Visible Typography, Side Controls Dock)
+       ========================================================================== */
+    .hero-section {
+      padding-top: 105px;
+      padding-bottom: 56px;
+      position: relative;
+    }
+
+    .hero-layout {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .hero-content {
+      flex: 1;
+      max-width: 820px;
+    }
+
+    .hero-name {
+      font-size: clamp(2.8rem, 6.5vw, 5.2rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      margin-bottom: 14px;
+      color: #ffffff;
+      text-shadow: 0 4px 24px rgba(0, 0, 0, 0.95), 0 0 40px rgba(255, 69, 0, 0.35);
+    }
+
+    .hero-name-scramble {
+      display: inline-block;
+      color: #ffffff;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95);
+    }
+
+    .hero-role-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      color: #fef08a;
+      background: rgba(250, 204, 21, 0.12);
+      border: 1px solid rgba(250, 204, 21, 0.4);
+      padding: 6px 16px;
+      border-radius: 9999px;
+      margin-bottom: 16px;
+      font-weight: 700;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-tagline {
+      font-size: clamp(1.28rem, 3vw, 1.65rem);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.4;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95);
+    }
+
+    .hero-bio {
+      font-size: 1.12rem;
+      color: #f3f4f6;
+      line-height: 1.75;
+      margin-bottom: 28px;
+      max-width: 720px;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .hero-quick-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .quick-meta-item-prominent {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 26px;
+      background: rgba(18, 14, 46, 0.88);
+      border: 1.5px solid rgba(255, 255, 255, 0.2);
+      border-radius: 14px;
+      font-size: clamp(1.1rem, 2.2vw, 1.28rem);
+      font-weight: 700;
+      color: #ffffff;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
+      transition: all var(--transition-fast);
+      letter-spacing: -0.01em;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+    }
+
+    .quick-meta-item-prominent:hover {
+      border-color: var(--heat-5);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px var(--glow-color);
+    }
+
+    .quick-meta-item-prominent span.icon {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    /* ==========================================================================
+       SIDEBAR CONTROL DOCK (Vertical Palette, Flow Toggle & Heat Meter)
+       ========================================================================== */
+    .hero-side-dock {
+      width: 210px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      background: rgba(16, 12, 38, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 18px;
+      padding: 18px 16px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), 0 0 25px rgba(255, 69, 0, 0.15);
+      position: sticky;
+      top: 86px;
+      z-index: 20;
+    }
+
+    /* 1. Heat Meter on the Side */
+    .side-heat-meter {
+      background: rgba(10, 7, 26, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .meter-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #ffca3a;
+    }
+
+    .meter-display {
+      text-align: center;
+      padding: 6px 0;
+      background: rgba(0, 0, 0, 0.45);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .meter-temp {
+      font-family: var(--font-mono);
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-shadow: 0 0 14px #ff4500;
+    }
+
+    .meter-unit {
+      font-size: 1.1rem;
+      color: #facc15;
+      margin-left: 2px;
+    }
+
+    .meter-sub {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: #94a3b8;
+      margin-top: 2px;
+      letter-spacing: 0.04em;
+    }
+
+    .meter-track {
+      position: relative;
+      height: 110px;
+      width: 16px;
+      margin: 4px auto;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 2px;
+    }
+
+    .meter-gradient-bar {
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      background: linear-gradient(180deg, #ffffff 0%, #facc15 20%, #ff4500 45%, #d90429 70%, #581c87 90%, #0d0a24 100%);
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+    }
+
+    .meter-cursor {
+      position: absolute;
+      left: -6px;
+      right: -6px;
+      top: 25%;
+      height: 6px;
+      background: #ffffff;
+      border-radius: 3px;
+      box-shadow: 0 0 10px #ffffff, 0 0 16px #ff4500;
+      transition: top 0.15s ease-out;
+      pointer-events: none;
+    }
+
+    .meter-labels {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: #94a3b8;
+    }
+
+    /* 2. Vertically Stacked Palette */
+    .vertical-theme-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .vertical-control-label {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #94a3b8;
+      margin-bottom: 2px;
+    }
+
+    .vertical-theme-btn {
+      width: 100%;
+      padding: 9px 12px;
+      border-radius: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #e5e7eb;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .vertical-theme-btn:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .vertical-theme-btn.active {
+      background: linear-gradient(135deg, rgba(255, 69, 0, 0.35), rgba(250, 204, 21, 0.25));
+      border: 1px solid #ff4500;
+      color: #ffffff;
+      box-shadow: 0 0 12px rgba(255, 69, 0, 0.4);
+    }
+
+    /* 3. Vertically Stacked Flow Toggle */
+    .vertical-flow-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .vertical-flow-btn {
+      width: 100%;
+      padding: 9px 12px;
+      border-radius: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #e5e7eb;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .vertical-flow-btn.active {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.25), rgba(59, 130, 246, 0.35));
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.35);
+    }
+
+    @media (max-width: 992px) {
+      .hero-layout {
+        flex-direction: column;
+      }
+      .hero-side-dock {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+      }
+      .side-heat-meter {
+        width: 100%;
+      }
+      .vertical-theme-group, .vertical-flow-group {
+        flex: 1;
+        min-width: 140px;
+      }
+    }
+
+    /* Balanced section spacing overrides per user request */
+    #about, #skills, #projects, #education, #leadership, #contact {
+      padding-top: 52px;
+      padding-bottom: 52px;
+    }
+
+    /* ==========================================================================
+       2. ABOUT SECTION (Cleaned up, no terminal clutter, tight spacing)
+       ========================================================================== */
+    .about-body {
+      padding: 32px;
+    }
+
+    .about-text {
+      font-size: 1.12rem;
+      color: var(--text-main);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .about-highlight-box {
+      background: rgba(249, 115, 22, 0.08);
+      border-left: 4px solid var(--heat-5);
+      padding: 16px 22px;
+      border-radius: 0 10px 10px 0;
+      margin-bottom: 28px;
+      font-size: 1rem;
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform var(--transition-fast), border-color var(--transition-fast);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--border-bright);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .stat-number {
+      font-family: var(--font-mono);
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--heat-5);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .stat-sub {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    /* ==========================================================================
+       3. SKILLS (Clean blocks, subheadings kept, levels badges removed)
+       ========================================================================== */
+    .skills-group {
+      margin-bottom: 28px;
+    }
+
+    .skills-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skills-subheading {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--heat-5);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .skills-blocks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 14px;
+    }
+
+    .skill-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 16px 18px;
+      transition: all var(--transition-fast);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .skill-block:hover {
+      transform: translateY(-3px);
+      border-color: var(--border-bright);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 16px var(--glow-color);
+    }
+
+    .skill-block-title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text-main);
+    }
+
+    .skill-block-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* ==========================================================================
+       4. FEATURED PROJECTS (Cleaned, no GitHub buttons, no temperature badges)
+       ========================================================================== */
+    .projects-filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 7px 16px;
+      border-radius: 8px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      transition: all var(--transition-fast);
+    }
+
+    .filter-btn:hover {
+      color: var(--text-main);
+      border-color: var(--border-bright);
+    }
+
+    .filter-btn.active {
+      background: rgba(249, 115, 22, 0.15);
+      color: var(--heat-5);
+      border-color: var(--heat-5);
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: var(--card-gradient);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all var(--transition-normal);
+      position: relative;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-bright);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.5), 0 0 18px var(--glow-color);
+    }
+
+    .project-badge-type {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--heat-5);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .project-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+
+    .project-role {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .project-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 18px;
+      flex-grow: 1;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .project-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       5. EDUCATION TIMELINE (Clean, accolades fluff removed)
+       ========================================================================== */
+    .timeline-container {
+      position: relative;
+      max-width: 820px;
+      padding-left: 32px;
+    }
+
+    .timeline-line {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--heat-5), var(--heat-3), var(--heat-1));
+      opacity: 0.6;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 32px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-node {
+      position: absolute;
+      top: 4px;
+      left: -32px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--bg-base);
+      border: 3px solid var(--heat-5);
+      box-shadow: 0 0 10px var(--heat-5);
+    }
+
+    .timeline-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 20px 24px;
+      transition: all var(--transition-fast);
+    }
+
+    .timeline-card:hover {
+      border-color: var(--border-bright);
+      transform: translateX(4px);
+    }
+
+    .timeline-year-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--heat-5);
+      background: rgba(249, 115, 22, 0.12);
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      padding: 2px 8px;
+      border-radius: 9999px;
+      margin-bottom: 6px;
+    }
+
+    .timeline-degree {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+    }
+
+    .timeline-institution {
+      font-size: 0.92rem;
+      color: var(--heat-4);
+      margin-bottom: 8px;
+    }
+
+    .timeline-score-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      padding: 3px 10px;
+      border-radius: 6px;
+    }
+
+    /* ==========================================================================
+       6. ACHIEVEMENTS & LEADERSHIP (Concise, accurate details)
+       ========================================================================== */
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .achievement-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 18px 20px;
+      transition: all var(--transition-fast);
+    }
+
+    .achievement-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--border-bright);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 14px var(--glow-color);
+    }
+
+    .achievement-icon {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .achievement-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+      line-height: 1.3;
+    }
+
+    .achievement-role {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--heat-5);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .achievement-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* ==========================================================================
+       7. CONTACT & SOCIALS
+       ========================================================================== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    .contact-card {
+      background: var(--card-gradient);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .form-input, .form-textarea {
+      background: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 12px 14px;
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: all var(--transition-fast);
+      outline: none;
+    }
+
+    .form-input:focus, .form-textarea:focus {
+      border-color: var(--heat-5);
+      box-shadow: 0 0 12px var(--glow-color);
+    }
+
+    .form-textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .form-target-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      color: #cbd5e1;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .form-target-badge .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 8px #10b981;
+      display: inline-block;
+      animation: pulse-dot 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+
+    .form-target-badge strong {
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    .form-success-box {
+      display: none;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 12px;
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .form-success-icon {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .form-success-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #ecfdf5;
+      margin-bottom: 8px;
+    }
+
+    .form-success-desc {
+      font-size: 0.88rem;
+      color: #a7f3d0;
+      line-height: 1.55;
+      margin-bottom: 18px;
+    }
+
+    .form-error-box {
+      display: none;
+      background: rgba(239, 68, 68, 0.12);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-radius: 10px;
+      padding: 14px;
+      font-size: 0.85rem;
+      color: #fecaca;
+      margin-top: 12px;
+      line-height: 1.45;
+    }
+
+    .btn-loading {
+      opacity: 0.8;
+      cursor: wait;
+      pointer-events: none;
+    }
+
+    .social-heat-cells {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .social-cell {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 14px 18px;
+      transition: all var(--transition-fast);
+    }
+
+    .social-cell:hover {
+      border-color: var(--border-bright);
+      transform: translateX(4px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .social-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .social-icon {
+      font-size: 1.25rem;
+      color: var(--heat-5);
+    }
+
+    .social-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .social-handle {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .copy-email-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      transition: all var(--transition-fast);
+    }
+
+    .copy-email-btn:hover {
+      background: var(--heat-5);
+      color: #000;
+    }
+
+    /* Toast Notification */
+    #toast-notification {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--heat-5);
+      color: var(--text-main);
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px var(--glow-color);
+      z-index: 10000;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #toast-notification.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+
+
+    /* ==========================================================================
+       RESPONSIVE
+       ========================================================================== */
+    @media (max-width: 768px) {
+      .navbar {
+        width: calc(100% - 24px);
+        max-width: 500px;
+        top: 10px;
+        padding: 5px 10px;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3px;
+        width: 100%;
+      }
+
+      .nav-link {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      #topographic-canvas {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen reader skip link -->
+  <a href="#hero" class="sr-only">Skip to main content</a>
+
+  <!-- Preloader: Thermal Calibration / Warm-Up -->
+  <div id="preloader" aria-label="Loading portfolio">
+    <div class="preloader-box">
+      <div style="font-size: 0.8rem; color: var(--heat-5); letter-spacing: 0.08em; margin-bottom: 6px;">[ THERMAL SENSOR INITIALIZATION ]</div>
+      <div class="preloader-temp"><span id="preloader-degrees">00.0</span>°C</div>
+      <div class="preloader-bar-bg">
+        <div class="preloader-bar-fill" id="preloader-bar"></div>
+      </div>
+      <div style="font-size: 0.72rem; color: var(--text-muted);" id="preloader-status">Calibrating topographic heat matrix...</div>
+    </div>
+  </div>
+
+  <!-- Overheat Easter Egg Banner -->
+  <div id="overheat-banner" role="alert">
+    ☀️ OVERHEAT PROTOCOL ACTIVATED: 5000°K WHITE-HOT RADIANCE ENGAGED! CELEBRATING MAXIMUM ENERGY! ☀️
+  </div>
+
+  <!-- Custom Cursor & Trail Elements -->
+  <div class="custom-cursor" id="cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Living Topographic Contour & Heatmap Canvas -->
+  <canvas id="topographic-canvas" aria-hidden="true"></canvas>
+  <div class="topographic-contour-texture" aria-hidden="true"></div>
+
+  <!-- Navigation Bar (Narrow, compact pill - centered, no Prachi Parmita, only section links) -->
+  <header>
+    <nav class="navbar" aria-label="Main Navigation">
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#leadership" class="nav-link">Leadership</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         1. HERO SECTION
+         ======================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-layout">
+          <!-- Main Hero Content -->
+          <div class="hero-content">
+            <!-- Typing / Scramble Name -->
+            <h1 class="hero-name">
+              <span class="hero-name-scramble" id="hero-name-scramble" data-final="Prachi Parmita">Prachi Parmita</span>
+            </h1>
+
+            <div class="hero-role-badge">
+              2nd-year B.Tech CSE Student · IILM University, Gurugram
+            </div>
+
+            <h2 class="hero-tagline">
+              someone who loves building things that work (and look cool)
+            </h2>
+
+            <p class="hero-bio">
+              I'm a 2nd-year B.Tech CSE student at IILM University, Gurugram, who loves turning problems into ideas that actually work. I've led hackathon teams, pitched on stage, and organised campus events, and now I'm building my technical side with Python, Git and AWS. Looking for an internship where I can build, learn and ship.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>View Projects</span>
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                </svg>
+              </a>
+              <a href="Prachi_Parmita_Resume.pdf" download="Prachi_Parmita_Resume.pdf" class="btn btn-secondary" id="hero-resume-btn">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+                <span>Download Resume</span>
+              </a>
+            </div>
+
+            <!-- Highlight Meta: Prominent and visible badges, Founder of IVAS -->
+            <div class="hero-quick-meta">
+              <div class="quick-meta-item-prominent">
+                <span class="icon">📍</span>
+                <span>New Delhi, India</span>
+              </div>
+              <div class="quick-meta-item-prominent">
+                <span class="icon">🎓</span>
+                <span>B.Tech CSE 2025</span>
+              </div>
+              <div class="quick-meta-item-prominent">
+                <span class="icon">⚡</span>
+                <span>Founder of IVAS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vertical Controls Dock: Heat Meter, Palette (Thermal, Infrared, Ice), Flow Toggle -->
+          <aside class="hero-side-dock" aria-label="Thermal and Environment Controls">
+            <!-- 1. Heat Meter on the Side (Brought back!) -->
+            <div class="side-heat-meter" id="side-heat-meter">
+              <div class="meter-header">
+                <span>🌡️</span>
+                <span>HEAT METER</span>
+              </div>
+              <div class="meter-display">
+                <span class="meter-temp" id="meter-temp-value">84.2</span><span class="meter-unit">°C</span>
+                <div class="meter-sub" id="meter-kelvin-value">357.3 K · OPTIMAL</div>
+              </div>
+              <div class="meter-track">
+                <div class="meter-gradient-bar"></div>
+                <div class="meter-cursor" id="meter-cursor"></div>
+              </div>
+              <div class="meter-labels">
+                <span>100°C</span>
+                <span>24°C</span>
+              </div>
+            </div>
+
+            <!-- 2. Vertically Stacked Theme Palette (Thermal, Infrared, Ice) -->
+            <div class="vertical-theme-group">
+              <div class="vertical-control-label">PALETTE</div>
+              <button class="theme-btn active vertical-theme-btn" data-theme-choice="thermal" title="Thermal Heatmap Palette">
+                <span>🔥</span> Thermal
+              </button>
+              <button class="theme-btn vertical-theme-btn" data-theme-choice="infrared" title="Infrared Palette">
+                <span>🚨</span> Infrared
+              </button>
+              <button class="theme-btn vertical-theme-btn" data-theme-choice="ice" title="Ice Sub-Zero Palette">
+                <span>❄️</span> Ice
+              </button>
+            </div>
+
+            <!-- 3. Flow Toggle Vertically Under Palette -->
+            <div class="vertical-flow-group">
+              <div class="vertical-control-label">FLOW SHIFT</div>
+              <button class="cursor-toggle-btn active vertical-flow-btn" id="cursor-toggle" title="Toggle interactive directional heat map flow">
+                <span>🌊</span>
+                <span id="cursor-toggle-text">FLOW: ON</span>
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         2. ABOUT SECTION (Cleaned, tight spacing, terminal clutter removed)
+         ======================================================================= -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="contour-card">
+          <div class="about-body">
+            <p class="about-text">
+              I'm a <strong>2nd-year B.Tech CSE student at IILM University, Gurugram</strong>, with experience leading teams in competitive hackathons, framing complex problems, researching and pitching viable solutions, and organising high-impact campus events.
+            </p>
+
+            <div class="about-highlight-box">
+              Founder of <strong>IVAS (Intelligent Vehicle Accountability System)</strong>. Currently sharpening my technical core across <strong>Python, Git, and AWS fundamentals</strong>, actively seeking an internship where I can build, learn, and ship production software.
+            </div>
+
+            <!-- 4 Animated Count-Up Stats -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-number"><span class="counter" data-target="4">0</span></div>
+                <div class="stat-label">Hackathons</div>
+                <div class="stat-sub">SIH, Innovate X & campus battles</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-number"><span class="counter" data-target="2">0</span><span style="font-size:1.4rem">nd</span></div>
+                <div class="stat-label">Year B.Tech CSE</div>
+                <div class="stat-sub">IILM University, Gurugram</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-number"><span class="counter" data-target="3">0</span></div>
+                <div class="stat-label">Teams Led as Leader</div>
+                <div class="stat-sub">SIH 2025, Innovate X, IVAS</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-number"><span class="counter" data-target="3">0</span></div>
+                <div class="stat-label">Tech Skills Learning</div>
+                <div class="stat-sub">Python, Git & AWS Cloud</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. SKILLS SECTION (Cleaned, subheadings kept, levels badges removed)
+         ======================================================================= -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="contour-card" style="padding: 28px;">
+          
+          <!-- Soft Skills Group -->
+          <div class="skills-group">
+            <h3 class="skills-subheading">
+              <span>🌟</span> Soft Skills & Leadership
+            </h3>
+            <div class="skills-blocks-grid">
+              <div class="skill-block">
+                <span class="skill-block-title">Public Speaking</span>
+                <p class="skill-block-desc">Stage pitching to juries, debates, and public delivery.</p>
+              </div>
+
+              <div class="skill-block">
+                <span class="skill-block-title">Communication</span>
+                <p class="skill-block-desc">Interpersonal synthesis, deck narratives & team alignment.</p>
+              </div>
+
+              <div class="skill-block">
+                <span class="skill-block-title">Pitching & Presentation Design</span>
+                <p class="skill-block-desc">Data-backed pitch slidecraft and on-stage presentations.</p>
+              </div>
+
+              <div class="skill-block">
+                <span class="skill-block-title">Team Leadership</span>
+                <p class="skill-block-desc">Delegation, conflict resolution, sprint coordination.</p>
+              </div>
+
+              <div class="skill-block">
+                <span class="skill-block-title">Research & Problem Framing</span>
+                <p class="skill-block-desc">Root-cause discovery, feasibility analysis, user journey framing.</p>
+              </div>
+
+              <div class="skill-block">
+                <span class="skill-block-title">Event Management</span>
+                <p class="skill-block-desc">Logistics execution, campus event operations & budgeting.</p>
+              </div>
+
+              <div class="skill-block">
+                <span class="skill-block-title">Social Media Management</span>
+                <p class="skill-block-desc">Campaign strategy, visual branding, club community growth.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Skills Group -->
+          <div class="skills-group">
+            <h3 class="skills-subheading">
+              <span>⚡</span> Technical Skills (Actively Learning & Deepening)
+            </h3>
+            <div class="skills-blocks-grid">
+              <div class="skill-block">
+                <span class="skill-block-title">Python</span>
+                <p class="skill-block-desc">Core programming, basic OOP, data processing, and scripting.</p>
+              </div>
+
+              <div class="skill-block">
+                <span class="skill-block-title">Git</span>
+                <p class="skill-block-desc">Branching models, pull requests, version control fundamentals.</p>
+              </div>
+
+              <div class="skill-block">
+                <span class="skill-block-title">AWS Fundamentals</span>
+                <p class="skill-block-desc">Foundations: IAM, S3 storage, EC2 instances, and cloud architecture.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. FEATURED PROJECTS (Cleaned, no GitHub buttons, no temperature tags)
+         ======================================================================= -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <!-- Filters -->
+        <div class="projects-filter-bar" role="tablist">
+          <button class="filter-btn active" data-filter="all">All (6)</button>
+          <button class="filter-btn" data-filter="hackathon">Hackathon (3)</button>
+          <button class="filter-btn" data-filter="project">Project (3)</button>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: IVAS -->
+          <article class="project-card" data-category="project">
+            <div>
+              <span class="project-badge-type">Flagship Project</span>
+              <h3 class="project-title">IVAS — Intelligent Vehicle Accountability System</h3>
+              <div class="project-role">Founder & Project Lead · Pitched at Innovate X</div>
+              <p class="project-desc">
+                A vehicle-mounted hardware & telematics system that records only key events (speed anomalies, harsh braking, collisions, fatigue risk) and cryptographically seals each one when recorded, so data cannot be silently altered. Built to give insurers, investigators and courts a reliable tamper-evident record. Wrote the project report and pitched it at Innovate X.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Hardware & IoT</span>
+              <span class="project-tag">Cryptography</span>
+              <span class="project-tag">Telematics</span>
+              <span class="project-tag">Forensic Auditing</span>
+              <span class="project-tag">Pitch Lead</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Self-Healing Script Agent -->
+          <article class="project-card" data-category="project">
+            <div>
+              <span class="project-badge-type">AI & Automation</span>
+              <h3 class="project-title">Self-Healing Script Agent</h3>
+              <div class="project-role">Personal Project · Python & Autonomous Debugging</div>
+              <p class="project-desc">
+                An automated repair loop for broken Python scripts. You give it a failing script, and it executes the code, parses the runtime traceback, edits the source to fix the root issue, and reruns in a loop until the script executes cleanly.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Autonomous Agent</span>
+              <span class="project-tag">Traceback Analysis</span>
+              <span class="project-tag">Self-Healing Loop</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: SnapCheck -->
+          <article class="project-card" data-category="hackathon">
+            <div>
+              <span class="project-badge-type">Smart India Hackathon 2026</span>
+              <h3 class="project-title">SnapCheck</h3>
+              <div class="project-role">Team Member · SIH 2026</div>
+              <p class="project-desc">
+                An AI-based platform that checks packaged products against legal declaration requirements using OCR and a rule engine.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">AI</span>
+              <span class="project-tag">OCR</span>
+              <span class="project-tag">Rule Engine</span>
+              <span class="project-tag">Legal Compliance</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: AI Smart Calendar -->
+          <article class="project-card" data-category="hackathon">
+            <div>
+              <span class="project-badge-type">Smart India Hackathon 2025</span>
+              <h3 class="project-title">AI Smart Calendar for Government of Jharkhand</h3>
+              <div class="project-role">Team Leader · SIH 2025</div>
+              <p class="project-desc">
+                Led the team on an AI-powered smart calendar; handled problem framing, research and pitch.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">AI</span>
+              <span class="project-tag">Problem Framing</span>
+              <span class="project-tag">Pitching</span>
+              <span class="project-tag">Team Leader</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: FloatChat -->
+          <article class="project-card" data-category="hackathon">
+            <div>
+              <span class="project-badge-type">Appathon</span>
+              <h3 class="project-title">FloatChat</h3>
+              <div class="project-role">Team Member · Appathon</div>
+              <p class="project-desc">
+                Contributed to the team's chat app during an intensive rapid development sprint.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Chat App</span>
+              <span class="project-tag">UI/UX</span>
+              <span class="project-tag">Realtime</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: Anganwadi Connect -->
+          <article class="project-card" data-category="project">
+            <div>
+              <span class="project-badge-type">Community Project</span>
+              <h3 class="project-title">Anganwadi Connect</h3>
+              <div class="project-role">Team Member · Presented to Swarna Jayanti</div>
+              <p class="project-desc">
+                Grassroots community platform presented directly to Swarna Jayanti representatives.
+              </p>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Community Tech</span>
+              <span class="project-tag">Healthcare</span>
+              <span class="project-tag">Field Research</span>
+              <span class="project-tag">Presentation</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. EDUCATION (Cleaned, fluff removed)
+         ======================================================================= -->
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- B.Tech -->
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-year-badge">2025 — 2029</span>
+              <h3 class="timeline-degree">B.Tech, Computer Science & Engineering</h3>
+              <div class="timeline-institution">IILM University, Gurugram</div>
+              <div class="timeline-score-pill">
+                <span>CGPA: 7.2 (First Year)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class XII -->
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-year-badge">Class XII</span>
+              <h3 class="timeline-degree">Senior Secondary Education</h3>
+              <div class="timeline-institution">New Green Field School, Saket, New Delhi</div>
+              <div class="timeline-score-pill">
+                <span>Score: 70%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class X -->
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-year-badge">Class X</span>
+              <h3 class="timeline-degree">Secondary School Examination</h3>
+              <div class="timeline-institution">New Green Field School, Saket, New Delhi</div>
+              <div class="timeline-score-pill">
+                <span>Score: 87.85%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. ACHIEVEMENTS & LEADERSHIP (Clean, accurate descriptions)
+         ======================================================================= -->
+    <section id="leadership">
+      <div class="container">
+        <h2 class="section-title">Achievements & Leadership</h2>
+
+        <div class="achievements-grid">
+          
+          <div class="achievement-card">
+            <div class="achievement-icon">🏆</div>
+            <h3 class="achievement-title">Smart India Hackathon 2025</h3>
+            <div class="achievement-role">Team Leader</div>
+            <p class="achievement-desc">Led the team on the AI Smart Calendar challenge for Government of Jharkhand.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🚀</div>
+            <h3 class="achievement-title">Innovate X</h3>
+            <div class="achievement-role">Team Leader</div>
+            <p class="achievement-desc">Helmed project strategy and pitched IVAS vehicle accountability system.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">⚡</div>
+            <h3 class="achievement-title">Smart India Hackathon 2026</h3>
+            <div class="achievement-role">Team Member</div>
+            <p class="achievement-desc">Contributed to SnapCheck AI verification platform.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">📱</div>
+            <h3 class="achievement-title">Appathon</h3>
+            <div class="achievement-role">Team Member</div>
+            <p class="achievement-desc">Collaborated on FloatChat chat application.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🎭</div>
+            <h3 class="achievement-title">Event Head, Cultural Club</h3>
+            <div class="achievement-role">Campus Leadership</div>
+            <p class="achievement-desc">Orchestrated campus-wide flagship events.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🎙️</div>
+            <h3 class="achievement-title">Social Media Head, Public Speaking Club</h3>
+            <div class="achievement-role">Active Public Speaker</div>
+            <p class="achievement-desc">Grew society digital footprint and spearheaded public speaking workshops.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🌐</div>
+            <h3 class="achievement-title">Member, IEEE Student Society</h3>
+            <div class="achievement-role">Technical Member</div>
+            <p class="achievement-desc">Engaged in student chapter seminars and peer networking.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🌟</div>
+            <h3 class="achievement-title">Member, Under 25 Society</h3>
+            <div class="achievement-role">Youth Community Network</div>
+            <p class="achievement-desc">Collaborating on youth empowerment and inter-college initiatives.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🤝</div>
+            <h3 class="achievement-title">Member, Student Industry Connect Team (SICT)</h3>
+            <div class="achievement-role">Corporate Liaison</div>
+            <p class="achievement-desc">Bridging university tech talent with industry interactions.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. CONTACT SECTION
+         ======================================================================= -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+
+        <div class="contact-grid">
+          <!-- Connected Email Contact Form -->
+          <div class="contact-card">
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 6px;">Direct Message</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px;">
+              Send a note directly to my inbox.
+            </p>
+
+            <form action="https://formsubmit.co/prachiparmita05@gmail.com" method="POST" class="contact-form" id="contact-form">
+              <!-- FormSubmit Configuration -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_subject" id="formsubmit-subject-hidden" value="[Portfolio] Direct Message for Prachi Parmita">
+              <!-- Anti-spam Honeypot -->
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Aditi Sharma" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. aditi@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Internship / Collaboration" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your team, project, or opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="width: 100%; margin-top: 6px;">
+                <span id="contact-btn-text">Send Message 🚀</span>
+              </button>
+
+              <div id="form-error-alert" class="form-error-box">
+                <div style="font-weight: 600; margin-bottom: 4px;">Direct transmission interrupted.</div>
+                <div style="font-size: 0.8rem; margin-bottom: 10px;">You can open your email app directly with this message ready:</div>
+                <a id="form-mailto-fallback" href="#" class="btn btn-secondary" style="width: 100%; text-align: center; justify-content: center; font-size: 0.82rem; padding: 8px 12px; display: inline-flex;">
+                  Open in Email Client ✉️
+                </a>
+              </div>
+            </form>
+
+            <!-- Success Box (shown after sending) -->
+            <div id="form-success-display" class="form-success-box">
+              <div class="form-success-icon">✨</div>
+              <div class="form-success-title">Message Delivered!</div>
+              <p class="form-success-desc">
+                Your note has been dispatched straight to <strong>prachiparmita05@gmail.com</strong>.<br>
+                Thank you for reaching out — I'll get back to you promptly!
+              </p>
+              <button type="button" id="form-reset-btn" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 18px; margin: 0 auto; display: inline-flex;">
+                Send Another Message
+              </button>
+            </div>
+          </div>
+
+          <!-- Socials & Direct Contact Hub -->
+          <div class="contact-card">
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 8px;">Connect</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+              Feel free to reach out directly through any of these channels:
+            </p>
+
+            <div class="social-heat-cells">
+              
+              <!-- Email cell with copy button -->
+              <div class="social-cell">
+                <div class="social-left">
+                  <span class="social-icon">✉️</span>
+                  <div>
+                    <div class="social-name">Email</div>
+                    <div class="social-handle">prachiparmita05@gmail.com</div>
+                  </div>
+                </div>
+                <button type="button" class="copy-email-btn" id="copy-email-trigger" title="Copy email address">
+                  Copy
+                </button>
+              </div>
+
+              <!-- GitHub cell -->
+              <a href="https://github.com/prachiparmitaug25-hub" target="_blank" rel="noopener noreferrer" class="social-cell">
+                <div class="social-left">
+                  <span class="social-icon">🐙</span>
+                  <div>
+                    <div class="social-name">GitHub</div>
+                    <div class="social-handle">@prachiparmitaug25-hub</div>
+                  </div>
+                </div>
+                <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--heat-5);">Explore ↗</span>
+              </a>
+
+              <!-- LinkedIn cell -->
+              <a href="https://www.linkedin.com/public-profile/settings" target="_blank" rel="noopener noreferrer" class="social-cell" id="linkedin-link">
+                <div class="social-left">
+                  <span class="social-icon">💼</span>
+                  <div>
+                    <div class="social-name">LinkedIn</div>
+                    <div class="social-handle">Prachi Parmita</div>
+                  </div>
+                </div>
+                <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--heat-5);">Connect ↗</span>
+              </a>
+
+              <!-- Location / Base -->
+              <div class="social-cell">
+                <div class="social-left">
+                  <span class="social-icon">📍</span>
+                  <div>
+                    <div class="social-name">Location</div>
+                    <div class="social-handle">New Delhi, India</div>
+                  </div>
+                </div>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">IST (UTC+5:30)</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" role="status" aria-live="polite">
+    <span style="font-size: 1.2rem;">🔥</span>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+
+
+  <!-- =========================================================================
+       VANILLA JAVASCRIPT ENGINE (TOPOGRAPHIC HEATMAP PHYSICS)
+       ========================================================================= -->
+  <script>
+    /* =========================================================================
+       1. GLOBAL UTILITIES & TOAST
+       ========================================================================= */
+    const toast = document.getElementById('toast-notification');
+    const toastMessage = document.getElementById('toast-message');
+
+    function showToast(msg) {
+      if (!toast) return;
+      toastMessage.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3200);
+    }
+
+    // Copy Email to clipboard with toast
+    const copyEmailBtn = document.getElementById('copy-email-trigger');
+    if (copyEmailBtn) {
+      copyEmailBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const email = 'prachiparmita05@gmail.com';
+        navigator.clipboard.writeText(email).then(() => {
+          showToast(`Copied ${email} to clipboard!`);
+          copyEmailBtn.textContent = 'Copied!';
+          setTimeout(() => {
+            copyEmailBtn.textContent = 'Copy';
+          }, 2000);
+        }).catch(() => {
+          showToast(`Email: ${email}`);
+        });
+      });
+    }
+
+
+
+    /* =========================================================================
+       CONTACT FORM -> DIRECT EMAIL ROUTING (prachiparmita05@gmail.com)
+       ========================================================================= */
+    const contactForm = document.getElementById('contact-form');
+    const contactSubmitBtn = document.getElementById('contact-submit-btn');
+    const contactBtnText = document.getElementById('contact-btn-text');
+    const formSuccessDisplay = document.getElementById('form-success-display');
+    const formErrorAlert = document.getElementById('form-error-alert');
+    const formMailtoFallback = document.getElementById('form-mailto-fallback');
+    const formResetBtn = document.getElementById('form-reset-btn');
+    const formSubjectHidden = document.getElementById('formsubmit-subject-hidden');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const subjectInput = document.getElementById('subject');
+        const messageInput = document.getElementById('message');
+
+        const nameVal = nameInput ? nameInput.value.trim() : '';
+        const emailVal = emailInput ? emailInput.value.trim() : '';
+        const subjectVal = subjectInput ? subjectInput.value.trim() : 'Portfolio Inquiry';
+        const messageVal = messageInput ? messageInput.value.trim() : '';
+
+        if (!nameVal || !emailVal || !messageVal) {
+          showToast('Please fill out all required fields.');
+          return;
+        }
+
+        // Set up pre-filled fallback link in case of network obstruction
+        if (formMailtoFallback) {
+          const mailtoSub = encodeURIComponent(`[Portfolio] ${subjectVal} - from ${nameVal}`);
+          const mailtoBody = encodeURIComponent(`Hi Prachi,\n\nName: ${nameVal}\nEmail: ${emailVal}\n\nMessage:\n${messageVal}\n\n---\nSent from your portfolio website.`);
+          formMailtoFallback.href = `mailto:prachiparmita05@gmail.com?subject=${mailtoSub}&body=${mailtoBody}`;
+        }
+
+        if (formSubjectHidden) {
+          formSubjectHidden.value = `[Portfolio] ${subjectVal} - from ${nameVal}`;
+        }
+
+        // Visual loading feedback
+        if (contactSubmitBtn && contactBtnText) {
+          contactSubmitBtn.classList.add('btn-loading');
+          contactBtnText.textContent = 'Sending... ⚡';
+        }
+        if (formErrorAlert) formErrorAlert.style.display = 'none';
+
+        const showDeliveredUI = () => {
+          contactForm.style.display = 'none';
+          if (formSuccessDisplay) formSuccessDisplay.style.display = 'block';
+          showToast('Message delivered directly to prachiparmita05@gmail.com!');
+          if (contactSubmitBtn && contactBtnText) {
+            contactSubmitBtn.classList.remove('btn-loading');
+            contactBtnText.textContent = 'Send Message 🚀';
+          }
+        };
+
+        // URLSearchParams avoids CORS OPTIONS preflight and supports keepalive cleanly
+        const payload = new URLSearchParams({
+          name: nameVal,
+          email: emailVal,
+          _replyto: emailVal,
+          subject: `[Portfolio Inquiry] ${subjectVal} (from ${nameVal})`,
+          message: messageVal,
+          _template: 'table',
+          _captcha: 'false'
+        });
+
+        let uiResolved = false;
+        const controller = new AbortController();
+        const requestTimeout = setTimeout(() => controller.abort(), 12000);
+
+        // Transition UI quickly after 800ms while keepalive finishes SMTP relay in background
+        const fastOptimisticTimer = setTimeout(() => {
+          if (!uiResolved) {
+            uiResolved = true;
+            showDeliveredUI();
+          }
+        }, 800);
+
+        try {
+          const response = await fetch('https://formsubmit.co/ajax/prachiparmita05@gmail.com', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json'
+            },
+            body: payload,
+            keepalive: true,
+            signal: controller.signal
+          });
+
+          clearTimeout(requestTimeout);
+          clearTimeout(fastOptimisticTimer);
+
+          let data = null;
+          try {
+            data = await response.json();
+          } catch (_) {
+            data = null;
+          }
+
+          if (response.ok || (data && (data.success === 'true' || data.success === true))) {
+            if (!uiResolved) {
+              uiResolved = true;
+              showDeliveredUI();
+            }
+            contactForm.reset();
+          } else {
+            throw new Error((data && data.message) || 'Transmission error');
+          }
+        } catch (err) {
+          clearTimeout(requestTimeout);
+          clearTimeout(fastOptimisticTimer);
+          console.warn('FormSubmit AJAX attempt issue, offering fallback:', err);
+
+          if (formSuccessDisplay) formSuccessDisplay.style.display = 'none';
+          contactForm.style.display = 'flex';
+          if (formErrorAlert) {
+            formErrorAlert.style.display = 'block';
+          }
+          if (contactSubmitBtn && contactBtnText) {
+            contactSubmitBtn.classList.remove('btn-loading');
+            contactBtnText.textContent = 'Send Message 🚀';
+          }
+          showToast('Could not send automatically. Click "Open in Email Client" to send!');
+        }
+      });
+    }
+
+    if (formResetBtn && contactForm && formSuccessDisplay) {
+      formResetBtn.addEventListener('click', () => {
+        formSuccessDisplay.style.display = 'none';
+        contactForm.style.display = 'flex';
+        if (formErrorAlert) formErrorAlert.style.display = 'none';
+      });
+    }
+
+    /* =========================================================================
+       2. PRELOADER / WARM-UP CALIBRATION
+       ========================================================================= */
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      const degreesEl = document.getElementById('preloader-degrees');
+      const barEl = document.getElementById('preloader-bar');
+      const statusEl = document.getElementById('preloader-status');
+
+      if (!preloader) return;
+
+      let currentDeg = 0;
+      const targetDeg = 100;
+      const duration = 750;
+      const startTime = performance.now();
+
+      function updatePreloader(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        currentDeg = (progress * targetDeg);
+
+        if (degreesEl) degreesEl.textContent = currentDeg.toFixed(1);
+        if (barEl) barEl.style.width = `${progress * 100}%`;
+
+        if (progress < 0.5) {
+          if (statusEl) statusEl.textContent = 'Generating topographic isolines...';
+        } else if (progress < 0.9) {
+          if (statusEl) statusEl.textContent = 'Mapping thermographic elevation fields...';
+        } else {
+          if (statusEl) statusEl.textContent = 'Optimal heat signature reached.';
+        }
+
+        if (progress < 1) {
+          requestAnimationFrame(updatePreloader);
+        } else {
+          setTimeout(() => {
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
+            setTimeout(() => preloader.remove(), 500);
+          }, 150);
+        }
+      }
+
+      requestAnimationFrame(updatePreloader);
+    });
+
+    /* =========================================================================
+       3. PALETTE THEME SWITCHER (Saved to localStorage)
+       ========================================================================= */
+    const savedTheme = localStorage.getItem('prachi-portfolio-theme') || 'thermal';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    function syncThemeButtons(activeTheme) {
+      themeButtons.forEach(btn => {
+        if (btn.getAttribute('data-theme-choice') === activeTheme) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+    }
+    syncThemeButtons(savedTheme);
+
+    themeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const choice = btn.getAttribute('data-theme-choice');
+        document.documentElement.setAttribute('data-theme', choice);
+        localStorage.setItem('prachi-portfolio-theme', choice);
+        syncThemeButtons(choice);
+        showToast(`Theme switched to ${choice.toUpperCase()} mode.`);
+      });
+    });
+
+    /* =========================================================================
+       3.1. DIRECTIONAL HEAT FLOW TOGGLE & PREFERS-REDUCED-MOTION
+       ========================================================================= */
+    const flowToggleBtn = document.getElementById('cursor-toggle');
+    const flowToggleText = document.getElementById('cursor-toggle-text');
+    const motionMediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let prefersReducedMotion = motionMediaQuery.matches;
+
+    let isFlowEnabled = localStorage.getItem('prachi-heat-flow') !== 'false';
+
+    function updateFlowToggleState() {
+      if (prefersReducedMotion) {
+        if (flowToggleBtn) {
+          flowToggleBtn.classList.remove('active');
+          flowToggleBtn.classList.add('disabled-reduced-motion');
+          flowToggleBtn.setAttribute('title', 'Directional heat shift disabled: System prefers-reduced-motion active');
+        }
+        if (flowToggleText) {
+          flowToggleText.textContent = 'FLOW: OFF (MOTION)';
+        }
+        return;
+      }
+
+      if (flowToggleBtn) {
+        flowToggleBtn.classList.remove('disabled-reduced-motion');
+        flowToggleBtn.setAttribute('title', 'Toggle interactive directional heat map flow');
+      }
+
+      if (isFlowEnabled) {
+        if (flowToggleBtn) flowToggleBtn.classList.add('active');
+        if (flowToggleText) flowToggleText.textContent = 'FLOW: ON';
+      } else {
+        if (flowToggleBtn) flowToggleBtn.classList.remove('active');
+        if (flowToggleText) flowToggleText.textContent = 'FLOW: OFF';
+      }
+    }
+
+    updateFlowToggleState();
+
+    if (flowToggleBtn) {
+      flowToggleBtn.addEventListener('click', () => {
+        if (prefersReducedMotion) {
+          showToast("Heat flow reaction disabled to respect system 'prefers-reduced-motion' setting.");
+          return;
+        }
+        isFlowEnabled = !isFlowEnabled;
+        localStorage.setItem('prachi-heat-flow', isFlowEnabled ? 'true' : 'false');
+        updateFlowToggleState();
+        showToast(isFlowEnabled ? '🌊 Directional Heat Map Flow ENABLED.' : '⏸️ Directional Heat Map Flow PAUSED.');
+      });
+    }
+
+    motionMediaQuery.addEventListener('change', (e) => {
+      prefersReducedMotion = e.matches;
+      updateFlowToggleState();
+      if (prefersReducedMotion) {
+        showToast("Reduced motion detected: interactive heat shifting disabled.");
+      }
+    });
+
+    /* =========================================================================
+       4. SCRAMBLE TEXT FOR HERO NAME
+       ========================================================================= */
+    const heroScramble = document.getElementById('hero-name-scramble');
+    if (heroScramble) {
+      const finalWord = heroScramble.getAttribute('data-final') || 'Prachi Parmita';
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!<>-_\\/[]{}—=+*^?#';
+      let iteration = 0;
+      let interval = null;
+
+      function startScramble() {
+        iteration = 0;
+        clearInterval(interval);
+        interval = setInterval(() => {
+          heroScramble.innerText = finalWord
+            .split('')
+            .map((letter, index) => {
+              if (index < iteration) {
+                return finalWord[index];
+              }
+              return chars[Math.floor(Math.random() * chars.length)];
+            })
+            .join('');
+
+          if (iteration >= finalWord.length) {
+            clearInterval(interval);
+          }
+          iteration += 1 / 3;
+        }, 28);
+      }
+
+      setTimeout(startScramble, 600);
+      heroScramble.addEventListener('mouseenter', startScramble);
+    }
+
+    /* =========================================================================
+       5. LIVING FLUID HEATMAP BACKGROUND & ARROW DIRECTIONAL REACTION ENGINE
+       ========================================================================= */
+    const canvas = document.getElementById('topographic-canvas');
+    let ctx = null;
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+
+    let mouse = {
+      x: width * 0.5,
+      y: height * 0.4,
+      prevX: width * 0.5,
+      prevY: height * 0.4,
+      vx: 0,
+      vy: 0,
+      speed: 0
+    };
+
+    let globalFlowShiftX = 0;
+    let globalFlowShiftY = 0;
+    let time = 0;
+    let contourRipples = [];
+    let contourSparks = [];
+    let clickFlares = [];
+
+    // Organic, interconnected thermal heat bodies covering the viewport
+    const nodeBlueprint = [
+      { rx: 0.25, ry: 0.30, baseR: 0.48, phase: 0.0, maxTemp: 1.0 },
+      { rx: 0.75, ry: 0.32, baseR: 0.46, phase: 1.7, maxTemp: 0.95 },
+      { rx: 0.50, ry: 0.55, baseR: 0.54, phase: 3.1, maxTemp: 1.0 },
+      { rx: 0.20, ry: 0.80, baseR: 0.44, phase: 4.5, maxTemp: 0.90 },
+      { rx: 0.80, ry: 0.78, baseR: 0.48, phase: 2.2, maxTemp: 0.95 }
+    ];
+
+    let ambientNodes = [];
+
+    function initAmbientNodes() {
+      ambientNodes = nodeBlueprint.map(bp => ({
+        originX: bp.rx * width,
+        originY: bp.ry * height,
+        x: bp.rx * width,
+        y: bp.ry * height,
+        vx: 0,
+        vy: 0,
+        baseRadius: Math.max(width, height) * bp.baseR,
+        radius: Math.max(width, height) * bp.baseR,
+        phase: bp.phase,
+        maxTemp: bp.maxTemp,
+        tempBoost: 0
+      }));
+    }
+
+    initAmbientNodes();
+
+    function createHeatRipple(originX, originY, intensity = 1.0) {
+      if (prefersReducedMotion) return;
+
+      contourRipples.push({
+        x: originX,
+        y: originY,
+        radius: 12,
+        maxRadius: Math.min(width, height) * 0.52 * intensity,
+        alpha: 0.95 * intensity,
+        speed: 16 * intensity
+      });
+
+      const sparkCount = Math.floor(12 * intensity);
+      for (let s = 0; s < sparkCount; s++) {
+        const angle = Math.random() * Math.PI * 2;
+        const velocity = (Math.random() * 6.5 + 3.0) * intensity;
+        contourSparks.push({
+          x: originX,
+          y: originY,
+          vx: Math.cos(angle) * velocity,
+          vy: Math.sin(angle) * velocity,
+          radius: Math.random() * 3.5 + 2,
+          alpha: 1.0,
+          decay: Math.random() * 0.025 + 0.015
+        });
+      }
+    }
+
+    // Helper: Apply the complete Authentic Heatmap spectrum (NO random colours)
+    function applyTrueHeatmapGradient(grad, theme, alphaMult = 1.0) {
+      if (theme === 'ice') {
+        grad.addColorStop(0.00, `rgba(255, 255, 255, ${0.98 * alphaMult})`);
+        grad.addColorStop(0.18, `rgba(224, 242, 254, ${0.92 * alphaMult})`);
+        grad.addColorStop(0.40, `rgba(125, 211, 252, ${0.82 * alphaMult})`);
+        grad.addColorStop(0.65, `rgba(56, 189, 248, ${0.65 * alphaMult})`);
+        grad.addColorStop(0.85, `rgba(2, 132, 199, ${0.38 * alphaMult})`);
+        grad.addColorStop(1.00, 'rgba(5, 14, 29, 0.0)');
+      } else if (theme === 'infrared') {
+        grad.addColorStop(0.00, `rgba(255, 255, 255, ${0.98 * alphaMult})`);
+        grad.addColorStop(0.18, `rgba(254, 205, 211, ${0.92 * alphaMult})`);
+        grad.addColorStop(0.40, `rgba(244, 63, 94, ${0.85 * alphaMult})`);
+        grad.addColorStop(0.65, `rgba(190, 18, 60, ${0.68 * alphaMult})`);
+        grad.addColorStop(0.85, `rgba(112, 10, 34, ${0.38 * alphaMult})`);
+        grad.addColorStop(1.00, 'rgba(18, 4, 12, 0.0)');
+      } else if (theme === 'whitehot') {
+        grad.addColorStop(0.00, `rgba(255, 255, 255, ${1.0 * alphaMult})`);
+        grad.addColorStop(0.18, `rgba(254, 240, 138, ${0.95 * alphaMult})`);
+        grad.addColorStop(0.42, `rgba(245, 158, 11, ${0.85 * alphaMult})`);
+        grad.addColorStop(0.68, `rgba(234, 88, 12, ${0.65 * alphaMult})`);
+        grad.addColorStop(0.88, `rgba(124, 45, 18, ${0.35 * alphaMult})`);
+        grad.addColorStop(1.00, 'rgba(36, 22, 4, 0.0)');
+      } else {
+        // AUTHENTIC THERMAL CAMERA HEATMAP (FLIR / Ironbow: NO random colours)
+        // Cold to Hot: Deep Navy -> Purple -> Magenta -> Thermal Red -> Solar Orange -> Yellow -> White-Hot
+        grad.addColorStop(0.00, `rgba(255, 255, 255, ${0.98 * alphaMult})`); // White-Hot Core
+        grad.addColorStop(0.16, `rgba(253, 224, 71, ${0.94 * alphaMult})`);  // Solar Gold / Yellow
+        grad.addColorStop(0.36, `rgba(249, 115, 22, ${0.88 * alphaMult})`);  // Blazing Orange
+        grad.addColorStop(0.56, `rgba(225, 29, 72, ${0.78 * alphaMult})`);   // Thermal Red / Crimson
+        grad.addColorStop(0.74, `rgba(168, 24, 142, ${0.62 * alphaMult})`);  // Radiant Magenta
+        grad.addColorStop(0.88, `rgba(74, 14, 120, ${0.38 * alphaMult})`);   // Deep Thermal Purple
+        grad.addColorStop(1.00, 'rgba(13, 10, 36, 0.0)');                   // Softly merges into deep base
+      }
+    }
+
+    if (canvas) {
+      ctx = canvas.getContext('2d');
+
+      function resizeCanvas() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+        initAmbientNodes();
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      window.addEventListener('mousemove', (e) => {
+        const dx = e.clientX - mouse.prevX;
+        const dy = e.clientY - mouse.prevY;
+        const speed = Math.hypot(dx, dy);
+
+        mouse.prevX = mouse.x;
+        mouse.prevY = mouse.y;
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+        mouse.vx = dx;
+        mouse.vy = dy;
+        mouse.speed = speed;
+
+        // WHEN MOVING THE ARROW:
+        // THE HEAT MAP SHIFTS IN THE EXACT DIRECTION THE ARROW IS GOING!
+        if (isFlowEnabled && !prefersReducedMotion && speed > 0.3) {
+          const arrowDirX = dx;
+          const arrowDirY = dy;
+
+          // Global fluid shift in the arrow's movement direction
+          globalFlowShiftX = Math.max(-180, Math.min(180, globalFlowShiftX + arrowDirX * 0.28));
+          globalFlowShiftY = Math.max(-180, Math.min(180, globalFlowShiftY + arrowDirY * 0.28));
+
+          // Physical shift and velocity impulse for each thermal convection cell
+          const influenceRange = Math.max(width, height) * 0.8;
+          for (let i = 0; i < ambientNodes.length; i++) {
+            const node = ambientNodes[i];
+            const dist = Math.hypot(node.x - e.clientX, node.y - e.clientY);
+            if (dist < influenceRange) {
+              const factor = Math.pow(1 - dist / influenceRange, 1.2);
+              node.vx += arrowDirX * factor * 0.62;
+              node.vy += arrowDirY * factor * 0.62;
+              node.tempBoost = Math.min(1.0, node.tempBoost + factor * 0.15);
+            }
+          }
+        }
+      });
+
+      // Pointer click or tap injects heat and triggers shockwave
+      function onPointerAction(px, py) {
+        // Spawn a radiant hot flare at click coordinates
+        clickFlares.push({
+          x: px,
+          y: py,
+          radius: 25,
+          maxRadius: Math.min(width, height) * 0.45,
+          alpha: 1.0
+        });
+
+        createHeatRipple(px, py, 1.35);
+
+        if (isFlowEnabled && !prefersReducedMotion) {
+          const maxPushRange = Math.max(width, height) * 0.7;
+          for (let node of ambientNodes) {
+            const dist = Math.hypot(node.x - px, node.y - py);
+            if (dist < maxPushRange) {
+              const angle = Math.atan2(node.y - py, node.x - px);
+              const push = (1 - dist / maxPushRange) * 28;
+              node.vx += Math.cos(angle) * push;
+              node.vy += Math.sin(angle) * push;
+              node.tempBoost = 1.0;
+            }
+          }
+        }
+      }
+
+      window.addEventListener('click', (e) => {
+        onPointerAction(e.clientX, e.clientY);
+      });
+
+      window.addEventListener('touchstart', (e) => {
+        if (e.touches && e.touches[0]) {
+          onPointerAction(e.touches[0].clientX, e.touches[0].clientY);
+        }
+      }, { passive: true });
+
+      function renderTopographicHeatmap() {
+        ctx.clearRect(0, 0, width, height);
+        const theme = document.documentElement.getAttribute('data-theme') || 'thermal';
+
+        // Physics step: Harmonic ambient convection + fluid shift damping
+        time += 0.014;
+        globalFlowShiftX *= 0.94;
+        globalFlowShiftY *= 0.94;
+
+        // 1. RENDER BASE CONTINUOUS THERMAL ATMOSPHERE (NEVER PITCH BLACK)
+        const baseGrad = ctx.createLinearGradient(0, 0, width, height);
+        if (theme === 'ice') {
+          baseGrad.addColorStop(0, '#061022');
+          baseGrad.addColorStop(0.5, '#0b1e3c');
+          baseGrad.addColorStop(1, '#050c1b');
+        } else if (theme === 'infrared') {
+          baseGrad.addColorStop(0, '#15050f');
+          baseGrad.addColorStop(0.5, '#260a1b');
+          baseGrad.addColorStop(1, '#11030c');
+        } else if (theme === 'whitehot') {
+          baseGrad.addColorStop(0, '#261705');
+          baseGrad.addColorStop(0.5, '#3d2508');
+          baseGrad.addColorStop(1, '#201303');
+        } else {
+          // Deep atmospheric thermal navy/purple
+          baseGrad.addColorStop(0, '#0e0b26');
+          baseGrad.addColorStop(0.4, '#17103d');
+          baseGrad.addColorStop(0.8, '#120d30');
+          baseGrad.addColorStop(1, '#0a081d');
+        }
+        ctx.fillStyle = baseGrad;
+        ctx.fillRect(0, 0, width, height);
+
+        // 2. RENDER THE LIVING TRUE HEATMAP LOBES
+        ctx.globalCompositeOperation = 'screen';
+
+        for (let i = 0; i < ambientNodes.length; i++) {
+          const node = ambientNodes[i];
+
+          // Ambient convection harmonic movement (always active in background)
+          const ambX = Math.cos(time * 0.75 + node.phase) * (width * 0.045);
+          const ambY = Math.sin(time * 0.85 + node.phase * 1.3) * (height * 0.045);
+          const targetX = node.originX + ambX + globalFlowShiftX;
+          const targetY = node.originY + ambY + globalFlowShiftY;
+
+          // Spring physics toward living target
+          const ax = (targetX - node.x) * 0.045;
+          const ay = (targetY - node.y) * 0.045;
+          node.vx = (node.vx + ax) * 0.92;
+          node.vy = (node.vy + ay) * 0.92;
+          node.x += node.vx;
+          node.y += node.vy;
+
+          node.tempBoost *= 0.96;
+
+          // Current animated radius
+          const currentRadius = node.baseRadius * (1 + Math.sin(time + node.phase) * 0.12 + node.tempBoost * 0.25);
+          const radGrad = ctx.createRadialGradient(node.x, node.y, 0, node.x, node.y, currentRadius);
+
+          // Apply full True Heatmap gradient ramp for EVERY heat center
+          applyTrueHeatmapGradient(radGrad, theme, 1.0);
+
+          ctx.fillStyle = radGrad;
+          ctx.beginPath();
+          ctx.arc(node.x, node.y, currentRadius, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Render any click-injected hot flares
+        for (let f = clickFlares.length - 1; f >= 0; f--) {
+          const flare = clickFlares[f];
+          const radGrad = ctx.createRadialGradient(flare.x, flare.y, 0, flare.x, flare.y, flare.radius);
+          applyTrueHeatmapGradient(radGrad, theme, flare.alpha);
+
+          ctx.fillStyle = radGrad;
+          ctx.beginPath();
+          ctx.arc(flare.x, flare.y, flare.radius, 0, Math.PI * 2);
+          ctx.fill();
+
+          flare.radius += (flare.maxRadius - flare.radius) * 0.06 + 3.0;
+          flare.alpha -= 0.015;
+          if (flare.alpha <= 0) {
+            clickFlares.splice(f, 1);
+          }
+        }
+
+        // 3. RENDER EXPANDING THERMAL SHOCKWAVES FROM CLICKS
+        for (let j = contourRipples.length - 1; j >= 0; j--) {
+          const rip = contourRipples[j];
+
+          ctx.beginPath();
+          ctx.arc(rip.x, rip.y, Math.max(1, rip.radius * 0.75), 0, Math.PI * 2);
+          ctx.strokeStyle = `rgba(255, 255, 255, ${rip.alpha * 0.85})`;
+          ctx.lineWidth = 1.5;
+          ctx.stroke();
+
+          ctx.beginPath();
+          ctx.arc(rip.x, rip.y, rip.radius, 0, Math.PI * 2);
+          if (theme === 'ice') {
+            ctx.strokeStyle = `rgba(56, 189, 248, ${rip.alpha * 0.85})`;
+          } else if (theme === 'infrared') {
+            ctx.strokeStyle = `rgba(244, 63, 94, ${rip.alpha * 0.85})`;
+          } else if (theme === 'whitehot') {
+            ctx.strokeStyle = `rgba(254, 240, 138, ${rip.alpha * 0.95})`;
+          } else {
+            ctx.strokeStyle = `rgba(249, 115, 22, ${rip.alpha * 0.9})`;
+          }
+          ctx.lineWidth = 2.5;
+          ctx.stroke();
+
+          rip.radius += (rip.maxRadius - rip.radius) * 0.08 + 2.5;
+          rip.alpha -= 0.016;
+
+          if (rip.alpha <= 0) {
+            contourRipples.splice(j, 1);
+          }
+        }
+
+        // 4. RENDER RADIATING SPARKS FROM CLICKS
+        for (let k = contourSparks.length - 1; k >= 0; k--) {
+          const spark = contourSparks[k];
+          spark.x += spark.vx;
+          spark.y += spark.vy;
+          spark.vx *= 0.96;
+          spark.vy *= 0.96;
+          spark.alpha -= spark.decay;
+
+          if (spark.alpha <= 0) {
+            contourSparks.splice(k, 1);
+            continue;
+          }
+
+          ctx.beginPath();
+          ctx.arc(spark.x, spark.y, spark.radius, 0, Math.PI * 2);
+          if (theme === 'ice') {
+            ctx.fillStyle = `rgba(186, 230, 253, ${spark.alpha})`;
+          } else if (theme === 'infrared') {
+            ctx.fillStyle = `rgba(253, 164, 175, ${spark.alpha})`;
+          } else if (theme === 'whitehot') {
+            ctx.fillStyle = `rgba(255, 255, 255, ${spark.alpha})`;
+          } else {
+            ctx.fillStyle = `rgba(250, 204, 21, ${spark.alpha})`;
+          }
+          ctx.fill();
+        }
+
+        requestAnimationFrame(renderTopographicHeatmap);
+      }
+      requestAnimationFrame(renderTopographicHeatmap);
+    }
+
+    /* =========================================================================
+       7. ACTIVE NAV SCROLL HIGHLIGHT & MOBILE TOGGLE
+       ========================================================================= */
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section[id]');
+
+    function onScrollNav() {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      let currentSectionId = '';
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 140;
+        const height = sec.offsetHeight;
+        if (scrollTop >= top && scrollTop < top + height) {
+          currentSectionId = sec.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', onScrollNav, { passive: true });
+    onScrollNav();
+
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    if (mobileToggle && navMenu) {
+      mobileToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+      });
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+        });
+      });
+    }
+
+    /* =========================================================================
+       8. ANIMATED COUNTERS
+       ========================================================================= */
+    const statCounters = document.querySelectorAll('.counter');
+    let counted = false;
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !counted) {
+          counted = true;
+          statCounters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'), 10) || 0;
+            let current = 0;
+            const step = Math.max(1, Math.floor(target / 20));
+            const timer = setInterval(() => {
+              current += step;
+              if (current >= target) {
+                current = target;
+                clearInterval(timer);
+              }
+              counter.textContent = current;
+            }, 60);
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) statsObserver.observe(aboutSection);
+
+    /* =========================================================================
+       9. PROJECTS FILTER
+       ========================================================================= */
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        projectCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    /* =========================================================================
+       10. EASTER EGG: "hot" TYPING OR KONAMI CODE -> WHITE-HOT OVERHEAT (5s)
+       ========================================================================= */
+    const overheatBanner = document.getElementById('overheat-banner');
+    let keyBuffer = '';
+    const konamiSequence = ['arrowup', 'arrowup', 'arrowdown', 'arrowdown', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'b', 'a'];
+    let konamiIndex = 0;
+    let overheatTimer = null;
+    let isOverheatActive = false;
+
+    function triggerOverheat() {
+      if (isOverheatActive) return;
+      isOverheatActive = true;
+
+      const activeThemeBeforeSurge = document.documentElement.getAttribute('data-theme') || 'thermal';
+
+      document.documentElement.setAttribute('data-theme', 'whitehot');
+      document.body.classList.add('whitehot-surge');
+
+      if (overheatBanner) {
+        overheatBanner.style.display = 'block';
+      }
+
+      showToast('☀️ CONGRATULATIONS! You unlocked the secret White-Hot thermal mode for 5s!');
+
+      if (typeof createHeatRipple === 'function') {
+        for (let i = 0; i < 8; i++) {
+          setTimeout(() => {
+            const rx = Math.random() * window.innerWidth;
+            const ry = Math.random() * window.innerHeight;
+            createHeatRipple(rx, ry, 1.5);
+          }, i * 180);
+        }
+      }
+
+      clearTimeout(overheatTimer);
+      overheatTimer = setTimeout(() => {
+        const currentSavedTheme = localStorage.getItem('prachi-portfolio-theme') || activeThemeBeforeSurge;
+        document.documentElement.setAttribute('data-theme', currentSavedTheme);
+        document.body.classList.remove('whitehot-surge');
+        if (overheatBanner) overheatBanner.style.display = 'none';
+        syncThemeButtons(currentSavedTheme);
+        showToast(`❄️ Core temperature normalized. Restored ${currentSavedTheme.toUpperCase()} theme.`);
+        isOverheatActive = false;
+      }, 5000);
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
+        return;
+      }
+
+      const keyLower = e.key.toLowerCase();
+
+      // Check typing "hot"
+      keyBuffer += keyLower;
+      if (keyBuffer.length > 5) keyBuffer = keyBuffer.slice(-5);
+      if (keyBuffer.endsWith('hot')) {
+        triggerOverheat();
+        keyBuffer = '';
+      }
+
+      // Check Konami Code
+      if (keyLower === konamiSequence[konamiIndex]) {
+        konamiIndex++;
+        if (konamiIndex === konamiSequence.length) {
+          triggerOverheat();
+          konamiIndex = 0;
+        }
+      } else {
+        konamiIndex = 0;
+        if (keyLower === konamiSequence[0]) {
+          konamiIndex = 1;
+        }
+      }
+    });
+
+    /* =========================================================================
+       11. RESUME DOWNLOAD HANDLER (Guaranteed valid A4 PDF download)
+       ========================================================================= */
+    const RESUME_PDF_BASE64 = "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";
+
+    function triggerBlobDownload(blob, filename) {
+      const blobUrl = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.style.display = 'none';
+      link.href = blobUrl;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      setTimeout(() => {
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(blobUrl);
+      }, 2500);
+    }
+
+    function downloadFromBase64() {
+      const binaryString = atob(RESUME_PDF_BASE64);
+      const len = binaryString.length;
+      const bytes = new Uint8Array(len);
+      for (let i = 0; i < len; i++) {
+        bytes[i] = binaryString.charCodeAt(i);
+      }
+      const blob = new Blob([bytes], { type: 'application/pdf' });
+      triggerBlobDownload(blob, 'Prachi_Parmita_Resume.pdf');
+    }
+
+    const heroResumeBtn = document.getElementById('hero-resume-btn');
+    if (heroResumeBtn) {
+      heroResumeBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        showToast('Downloading Prachi_Parmita_Resume.pdf...');
+        try {
+          const response = await fetch('/Prachi_Parmita_Resume.pdf');
+          if (response.ok) {
+            const blob = await response.blob();
+            const headerSlice = await blob.slice(0, 5).text();
+            if (headerSlice.startsWith('%PDF')) {
+              triggerBlobDownload(blob, 'Prachi_Parmita_Resume.pdf');
+              return;
+            }
+          }
+          downloadFromBase64();
+        } catch (err) {
+          downloadFromBase64();
+        }
+      });
+    }
+
+    /* =========================================================================
+       12. INTERACTIVE SIDE HEAT METER
+       ========================================================================= */
+    const meterTempEl = document.getElementById('meter-temp-value');
+    const meterKelvinEl = document.getElementById('meter-kelvin-value');
+    const meterCursorEl = document.getElementById('meter-cursor');
+
+    let currentHeatIndex = 84.2;
+    let targetHeatIndex = 84.2;
+
+    function updateSideHeatMeter() {
+      // Smooth interpolation toward target
+      currentHeatIndex += (targetHeatIndex - currentHeatIndex) * 0.08;
+      
+      if (meterTempEl) {
+        meterTempEl.textContent = currentHeatIndex.toFixed(1);
+      }
+      if (meterKelvinEl) {
+        const kelvin = (currentHeatIndex + 273.15).toFixed(1);
+        let status = 'OPTIMAL';
+        if (currentHeatIndex > 95) status = 'CRITICAL SURGE';
+        else if (currentHeatIndex > 88) status = 'WHITE HOT';
+        else if (currentHeatIndex > 75) status = 'HIGH ENERGY';
+        meterKelvinEl.textContent = `${kelvin} K · ${status}`;
+      }
+      if (meterCursorEl) {
+        // Range 24 to 100 degrees
+        const fraction = Math.max(0, Math.min(1, (currentHeatIndex - 24) / 76));
+        meterCursorEl.style.top = `${(1 - fraction) * 100}%`;
+      }
+      requestAnimationFrame(updateSideHeatMeter);
+    }
+    requestAnimationFrame(updateSideHeatMeter);
+
+    // Mouse velocity warms the heat meter
+    let lastMeterMouseTime = performance.now();
+    let lastMeterX = 0;
+    let lastMeterY = 0;
+
+    window.addEventListener('mousemove', (e) => {
+      const now = performance.now();
+      const dt = Math.max(now - lastMeterMouseTime, 16);
+      const dist = Math.hypot(e.clientX - lastMeterX, e.clientY - lastMeterY);
+      const speed = dist / dt;
+
+      lastMeterX = e.clientX;
+      lastMeterY = e.clientY;
+      lastMeterMouseTime = now;
+
+      // Bump target heat index with mouse speed
+      const boost = Math.min(speed * 3.5, 14);
+      targetHeatIndex = Math.min(99.4, 76 + boost + (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight || 1)) * 12);
+    }, { passive: true });
+
+    // Scroll depth also modulates thermal index
+    window.addEventListener('scroll', () => {
+      const scrollRatio = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight || 1);
+      targetHeatIndex = 76 + scrollRatio * 18;
+    }, { passive: true });
+
+    // Decay when idle
+    setInterval(() => {
+      const idleTime = performance.now() - lastMeterMouseTime;
+      if (idleTime > 300) {
+        targetHeatIndex = Math.max(68.0, targetHeatIndex * 0.98);
+      }
+    }, 150);
+  </script>
+</body>
+</html>
